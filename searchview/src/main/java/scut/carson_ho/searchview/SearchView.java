@@ -210,7 +210,7 @@ public class SearchView extends LinearLayout {
                 TextView textView = (TextView) view.findViewById(android.R.id.text1);
                 String name = textView.getText().toString();
                 et_search.setText(name);
-                Toast.makeText(context, name, Toast.LENGTH_SHORT).show();
+               // Toast.makeText(context, name, Toast.LENGTH_SHORT).show();
             }
         });
 
