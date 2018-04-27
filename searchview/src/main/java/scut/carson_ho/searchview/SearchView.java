@@ -243,6 +243,10 @@ public class SearchView extends LinearLayout {
         et_search.setTextSize(textSizeSearch);
         et_search.setTextColor(textColorSearch);
         et_search.setHint(textHintSearch);
+        et_search.setFocusable(true);
+        et_search.setFocusableInTouchMode(true);
+        et_search.requestFocus();
+        activity.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
 
         // 3. 搜索框背景颜色
         search_block = (LinearLayout)findViewById(R.id.search_block);
