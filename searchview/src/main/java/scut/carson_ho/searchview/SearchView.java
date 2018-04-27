@@ -19,6 +19,7 @@ import android.widget.LinearLayout;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.view.inputmethod.InputMethodManager;
 
 /**
  * Created by Carson_Ho on 17/8/10.
@@ -246,7 +247,7 @@ public class SearchView extends LinearLayout {
         et_search.setFocusable(true);
         et_search.setFocusableInTouchMode(true);
         et_search.requestFocus();
-        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        InputMethodManager imm = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.showSoftInput(et_search,0);
 
         // 3. 搜索框背景颜色
